@@ -13,6 +13,18 @@
 		0157284729BDBB4B006ADCCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0157284529BDBB4B006ADCCA /* Main.storyboard */; };
 		0157284929BDBB4C006ADCCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0157284829BDBB4C006ADCCA /* Assets.xcassets */; };
 		0157284C29BDBB4C006ADCCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0157284A29BDBB4C006ADCCA /* LaunchScreen.storyboard */; };
+		0157285929BDBBA5006ADCCA /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0157285829BDBBA5006ADCCA /* Alamofire */; };
+		0157285C29BDBBEA006ADCCA /* Swime in Frameworks */ = {isa = PBXBuildFile; productRef = 0157285B29BDBBEA006ADCCA /* Swime */; };
+		0157286729BDBC24006ADCCA /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0157285F29BDBC24006ADCCA /* NetworkRouter.swift */; };
+		0157286829BDBC24006ADCCA /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0157286029BDBC24006ADCCA /* APIRequest.swift */; };
+		0157286C29BDBC24006ADCCA /* Retrier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0157286429BDBC24006ADCCA /* Retrier.swift */; };
+		0157286D29BDBC24006ADCCA /* RequestHeaderBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0157286529BDBC24006ADCCA /* RequestHeaderBuilder.swift */; };
+		0157287629C3716A006ADCCA /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0157287529C3716A006ADCCA /* NetworkManager.swift */; };
+		0157287829C37225006ADCCA /* AuthenticationRepositoriy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0157287729C37225006ADCCA /* AuthenticationRepositoriy.swift */; };
+		0157287C29C3726A006ADCCA /* RegistrationServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0157287B29C3726A006ADCCA /* RegistrationServices.swift */; };
+		0157287F29C37363006ADCCA /* RegisterDomainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0157287E29C37363006ADCCA /* RegisterDomainModel.swift */; };
+		0157288129C376EA006ADCCA /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0157288029C376EA006ADCCA /* ViewModel.swift */; };
+		0157288329C37C76006ADCCA /* InitializeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0157288229C37C76006ADCCA /* InitializeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +36,16 @@
 		0157284829BDBB4C006ADCCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0157284B29BDBB4C006ADCCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0157284D29BDBB4C006ADCCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0157285F29BDBC24006ADCCA /* NetworkRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
+		0157286029BDBC24006ADCCA /* APIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		0157286429BDBC24006ADCCA /* Retrier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Retrier.swift; sourceTree = "<group>"; };
+		0157286529BDBC24006ADCCA /* RequestHeaderBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestHeaderBuilder.swift; sourceTree = "<group>"; };
+		0157287529C3716A006ADCCA /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		0157287729C37225006ADCCA /* AuthenticationRepositoriy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRepositoriy.swift; sourceTree = "<group>"; };
+		0157287B29C3726A006ADCCA /* RegistrationServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationServices.swift; sourceTree = "<group>"; };
+		0157287E29C37363006ADCCA /* RegisterDomainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterDomainModel.swift; sourceTree = "<group>"; };
+		0157288029C376EA006ADCCA /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		0157288229C37C76006ADCCA /* InitializeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitializeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +53,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0157285C29BDBBEA006ADCCA /* Swime in Frameworks */,
+				0157285929BDBBA5006ADCCA /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +80,97 @@
 		0157283E29BDBB4B006ADCCA /* NetowrkLayerWithCombine */ = {
 			isa = PBXGroup;
 			children = (
-				0157283F29BDBB4B006ADCCA /* AppDelegate.swift */,
-				0157284129BDBB4B006ADCCA /* SceneDelegate.swift */,
-				0157284329BDBB4B006ADCCA /* ViewController.swift */,
-				0157284529BDBB4B006ADCCA /* Main.storyboard */,
-				0157284829BDBB4C006ADCCA /* Assets.xcassets */,
-				0157284A29BDBB4C006ADCCA /* LaunchScreen.storyboard */,
+				0157285529BDBB70006ADCCA /* Assets */,
+				0157285429BDBB5C006ADCCA /* Application */,
+				0157285329BDBB51006ADCCA /* Network */,
+				0157285629BDBB87006ADCCA /* Classes */,
 				0157284D29BDBB4C006ADCCA /* Info.plist */,
 			);
 			path = NetowrkLayerWithCombine;
+			sourceTree = "<group>";
+		};
+		0157285329BDBB51006ADCCA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0157287D29C3734E006ADCCA /* Model */,
+				0157287429BDC6ED006ADCCA /* Services */,
+				0157287329BDC6E2006ADCCA /* Repositories */,
+				0157287229BDC6D8006ADCCA /* Manager */,
+				0157285D29BDBC24006ADCCA /* Core */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0157285429BDBB5C006ADCCA /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				0157283F29BDBB4B006ADCCA /* AppDelegate.swift */,
+				0157284129BDBB4B006ADCCA /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		0157285529BDBB70006ADCCA /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				0157284829BDBB4C006ADCCA /* Assets.xcassets */,
+				0157284A29BDBB4C006ADCCA /* LaunchScreen.storyboard */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		0157285629BDBB87006ADCCA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0157284329BDBB4B006ADCCA /* ViewController.swift */,
+				0157284529BDBB4B006ADCCA /* Main.storyboard */,
+				0157288029C376EA006ADCCA /* ViewModel.swift */,
+				0157288229C37C76006ADCCA /* InitializeViewController.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		0157285D29BDBC24006ADCCA /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				0157285F29BDBC24006ADCCA /* NetworkRouter.swift */,
+				0157286029BDBC24006ADCCA /* APIRequest.swift */,
+				0157286429BDBC24006ADCCA /* Retrier.swift */,
+				0157286529BDBC24006ADCCA /* RequestHeaderBuilder.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		0157287229BDC6D8006ADCCA /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				0157287529C3716A006ADCCA /* NetworkManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		0157287329BDC6E2006ADCCA /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				0157287729C37225006ADCCA /* AuthenticationRepositoriy.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		0157287429BDC6ED006ADCCA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0157287B29C3726A006ADCCA /* RegistrationServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0157287D29C3734E006ADCCA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0157287E29C37363006ADCCA /* RegisterDomainModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +189,10 @@
 			dependencies = (
 			);
 			name = NetowrkLayerWithCombine;
+			packageProductDependencies = (
+				0157285829BDBBA5006ADCCA /* Alamofire */,
+				0157285B29BDBBEA006ADCCA /* Swime */,
+			);
 			productName = NetowrkLayerWithCombine;
 			productReference = 0157283C29BDBB4B006ADCCA /* NetowrkLayerWithCombine.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +221,10 @@
 				Base,
 			);
 			mainGroup = 0157283329BDBB4B006ADCCA;
+			packageReferences = (
+				0157285729BDBBA5006ADCCA /* XCRemoteSwiftPackageReference "Alamofire" */,
+				0157285A29BDBBE9006ADCCA /* XCRemoteSwiftPackageReference "Swime" */,
+			);
 			productRefGroup = 0157283D29BDBB4B006ADCCA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,8 +253,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				0157284429BDBB4B006ADCCA /* ViewController.swift in Sources */,
+				0157287829C37225006ADCCA /* AuthenticationRepositoriy.swift in Sources */,
+				0157287F29C37363006ADCCA /* RegisterDomainModel.swift in Sources */,
 				0157284029BDBB4B006ADCCA /* AppDelegate.swift in Sources */,
+				0157286729BDBC24006ADCCA /* NetworkRouter.swift in Sources */,
+				0157288329C37C76006ADCCA /* InitializeViewController.swift in Sources */,
+				0157286C29BDBC24006ADCCA /* Retrier.swift in Sources */,
+				0157287C29C3726A006ADCCA /* RegistrationServices.swift in Sources */,
+				0157287629C3716A006ADCCA /* NetworkManager.swift in Sources */,
 				0157284229BDBB4B006ADCCA /* SceneDelegate.swift in Sources */,
+				0157286D29BDBC24006ADCCA /* RequestHeaderBuilder.swift in Sources */,
+				0157288129C376EA006ADCCA /* ViewModel.swift in Sources */,
+				0157286829BDBC24006ADCCA /* APIRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +480,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0157285729BDBBA5006ADCCA /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+		0157285A29BDBBE9006ADCCA /* XCRemoteSwiftPackageReference "Swime" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sendyhalim/Swime";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 3.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0157285829BDBBA5006ADCCA /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0157285729BDBBA5006ADCCA /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		0157285B29BDBBEA006ADCCA /* Swime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0157285A29BDBBE9006ADCCA /* XCRemoteSwiftPackageReference "Swime" */;
+			productName = Swime;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0157283429BDBB4B006ADCCA /* Project object */;
 }
